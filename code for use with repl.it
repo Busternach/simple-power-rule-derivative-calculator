@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+ 
+
+  public static void main(String[] args) {
+    // Xpower equals the non numerical version of power x is using
+    // Xpow = the numerical version of Xpower
+    // Ax = the non numerical version of the constant in front of the x
+    // constantX = the numerical version of Ax
+    String Xpower;
+    Xpower = JOptionPane.showInputDialog(null, "Enter the power of x here");
+
+    int Xpow;
+    Xpow = Integer.parseInt(Xpower);
+
+    String Ax;
+    Ax = JOptionPane.showInputDialog(null, " enter the constant in front of x");
+
+    int constantX;
+    constantX = Integer.parseInt(Ax);
+
+    double Derivative;
+    Derivative = ((Xpow) * (constantX));
+
+    System.out.print("The Derivative Is " + Derivative + "x to the power of" + (Xpow - 1));
+
+  }
+}
